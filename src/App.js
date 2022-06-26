@@ -1,5 +1,6 @@
 "react-router-dom";
 
+import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -22,6 +23,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/aboutus" element={<AboutUs />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/process" element={<Process />}></Route>
           <Route path="/privacypolicy" element={<PrivacyPolicy />}></Route>
