@@ -12,27 +12,27 @@ const Feedback = ({ setModalOn }) => {
 
   return (
     <div className=" h-full w-full bg-white-400 opacity-100 fixed inset-0 z-50">
-      <div className="flex h-full w-full justify-center items-center ">
-        <div className="flex-col w-[40rem] h-[40rem] bg-white p-2 border-4 border-rose-700 rounded-xl ">
+      <div className="flex h-full w-full justify-center items-center mt-5 ">
+        <div className="flex-col w-[40rem] h-[41rem] bg-rose-100 border-2 border-rose-400 rounded-lg ">
           <button
-            className="text-right hover:outline-offset-2 hover:target:marker:bg-rose-900 focus:ring-2 focus:ring-rose-700 "
+            className="text-right hover:outline-offset-2 hover:target:marker:bg-rose-300 focus:ring-2 focus:ring-rose-700 text-lg p-4 font-semibold"
             onClick={handleXClick}
           >
             X
           </button>
 
-          <div className="w-full text-white bg-[#560216] h-[3rem] my-2 p-1 text-3xl rounded-xl text-center">
+          <div className=" text-[#560216] h-[3rem] mx-auto text-5xl mb-4 text-center font-semibold">
             Feedback
           </div>
 
           <div className="text-center p-1 text-lg">
             Please rate our Services, it helps us serving you better.
           </div>
-          <div className="col text-center text-2xl p-3">
+          <div className="col text-center text-xl p-2">
             <Rate rating={rating} onRating={(rate) => setRating(rate)} />
           </div>
 
-          <div className="w-full h-[3rem] my-2 p-1 text-white bg-[#560216] text-3xl rounded-xl text-center">
+          <div className="w-5/6 mx-auto  text-[#560216] text-3xl text-center">
             Suggestions
           </div>
 
@@ -42,7 +42,7 @@ const Feedback = ({ setModalOn }) => {
 
           <div className="flex flex-col p-1">
             <input
-              className="placeholder: placeholder:text-slate-700 block bg-white w-full border border-slate-800 rounded-md shadow-md focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
+              className="placeholder: placeholder:text-slate-700 block bg-white mx-auto w-3/4 rounded-md shadow-sm focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
               placeholder="Name"
               type="text"
               name="text"
@@ -51,7 +51,7 @@ const Feedback = ({ setModalOn }) => {
 
           <div className="flex flex-col p-1">
             <input
-              className="placeholder: placeholder:text-slate-700 block bg-white w-full border border-slate-800 rounded-md shadow-md focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
+              className="placeholder: placeholder:text-slate-700 block bg-white mx-auto w-3/4 rounded-md shadow-sm focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
               placeholder="Email"
               type="email"
               name="email"
@@ -60,16 +60,16 @@ const Feedback = ({ setModalOn }) => {
 
           <div className="flex flex-col p-1">
             <input
-              className="placeholder: placeholder:text-slate-700 block bg-white w-full border border-slate-800 rounded-md shadow-md focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
+              className="placeholder: placeholder:text-slate-700 block bg-white mx-auto w-3/4 rounded-md shadow-sm focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
               placeholder="Phone Number"
               type="number"
               name="number"
             />
           </div>
 
-          <div className="flex flex-col p-1">
+          <div className="flex flex-col p-1 mt-4">
             <input
-              className="placeholder: placeholder:text-slate-700 block bg-white w-full border border-slate-800 rounded-md shadow-md focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
+              className="placeholder: placeholder:text-slate-700 block bg-white mx-auto w-3/4 rounded-md shadow-sm focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
               placeholder="Subject"
               type="text"
               name="text"
@@ -79,7 +79,7 @@ const Feedback = ({ setModalOn }) => {
           <div className="flex flex-col p-1 py-3">
             <textarea
               rows="4"
-              className=" pl-2 placeholder: placeholder:text-slate-600 block bg-white w-full border border-slate-500 rounded-sm shadow-md focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
+              className=" pl-2 placeholder: placeholder:text-slate-600 mx-auto block bg-white w-5/6 rounded-lg shadow-sm focus:outline-none hover:outline-offset-2 focus:border-[#560216] focus:ring-[#560216] focus:ring-1 sm:text-md"
               placeholder="Write Suggestions..."
               type="text"
               name="text"
@@ -88,7 +88,7 @@ const Feedback = ({ setModalOn }) => {
 
           <div className="text-center p-1 text-lg">
             <button
-              className="w-3/4 sm:w-1/2 py-2 text-center  text-white bg-[#560216] font-semibold rounded-md hover:bg-rose-800"
+              className="w-1/2 sm:w-1/2 py-2 text-center text-white bg-[#560216] font-semibold rounded-md hover:bg-rose-800"
               onClick={handleXClick}
             >
               Submit
